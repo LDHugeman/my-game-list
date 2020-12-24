@@ -1,0 +1,9 @@
+<mat-toolbar [color]="'primary'">
+  <span>{{ title }}</span>
+  <span class="fill-space"></span>
+  <div class="user">
+    <mat-icon matPrefix class="toolbar-icon">person</mat-icon>
+    <span>{{ profileName }}</span>
+  </div>
+  <app-menu (opcionChange)="changeTitle($event)"></app-menu>
+</mat-toolbar>

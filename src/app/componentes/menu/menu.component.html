@@ -1,0 +1,27 @@
+<div class="menu-wrapper">
+  <div class="menu-btn">
+    <button
+      [ngClass]="{ 'menu-extended': showMenu }"
+      (click)="openMenu(!showMenu)"
+      mat-icon-button
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <div
+    [ngClass]="{ 'menu-expand': showMenu }"
+    class="menu-content menu-compressed"
+    (clickOutside)="openMenu(false)"
+    [exclude]="'.menu-btn'"
+  >
+    <mat-action-list>
+      <button
+        (click)="cargarPantalla(opcion.enlace, opcion.nombre)"
+        *ngFor="let opcion of opcionsMenu"
+        mat-list-item
+      >
+        {{ opcion.nombre }}
+      </button>
+    </mat-action-list>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+.menu-wrapper {
+  /*
+  position: relative;
+  padding: 8px 15px;
+  float: right;
+  border-radius: 5px;
+  */
+}
+
+.menu-wrapper .menu-btn {
+  cursor: pointer;
+  margin-left: 1em;
+}
+
+.menu-wrapper .menu-btn:hover {
+  color: royalblue;
+  background-color: #ffffff;
+  border-radius: 500px;
+}
+
+.menu-extended {
+  color: royalblue;
+  background-color: #ffffff;
+  border-radius: 500px;
+}
+
+.menu-compressed {
+  max-height: 0px;
+}
+
+.menu-expand {
+  z-index: 1000;
+  max-height: 200px;
+}
+
+.menu-wrapper .menu-content {
+  position: absolute;
+  overflow: hidden;
+  top: 64px;
+  right: 0px;
+  width: 250px;
+  transition: max-height 0.5s;
+  background-color: rgb(245, 245, 245);
+}
+
+.mat-list-base {
+  padding-top: 0px;
+}
+
+.mat-list-item {
+  text-align: center;
+}
+
+.mat-list-item:hover {
+  background-color: royalblue;
+  color: white;
+}

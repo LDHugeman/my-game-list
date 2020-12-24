@@ -1,0 +1,33 @@
+.notification-wraper-normal-position {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  max-height: 330px;
+  overflow: hidden;
+  width: 300px;
+  display: block;
+}
+
+.notification-wraper-login-position {
+  position: absolute;
+  top: 21em;
+  right: 32em;
+  max-height: 330px;
+  overflow: hidden;
+  width: 300px;
+  display: block;
+}
+
+.notification-wraper-register-position {
+  position: absolute;
+  top: 17em;
+  right: 25.7em;
+  max-height: 330px;
+  overflow: hidden;
+  width: 300px;
+  display: block;
+}
+
+.notification {
+  margin-bottom: 0.5em;
+}

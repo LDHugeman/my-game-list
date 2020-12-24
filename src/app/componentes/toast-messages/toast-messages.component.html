@@ -1,0 +1,23 @@
+<div>
+  <aside *ngFor="let message of messages">
+    <div
+      class="notification animated fadeIn faster"
+      *ngIf="!message.dismissed"
+      [ngClass]="{
+        'is-info': message.style == 'info',
+        'is-danger': message.style == 'danger',
+        'is-success': message.style == 'success',
+        'notification-wraper-normal-position': message.position == 'normal',
+        'notification-wraper-login-position': message.position == 'login',
+        'notification-wraper-register-position': message.position == 'register'
+      }"
+    >
+      <button
+        *ngIf="message.closable"
+        class="delete"
+        (click)="dismiss(message.id)"
+      ></button>
+      {{ message.content }}
+    </div>
+  </aside>
+</div>
